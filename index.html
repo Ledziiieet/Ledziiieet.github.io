@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>Html input </title>
+  <meta name="viewport"content="width=device-width, initial-scale =1"/>
+  <meta charset="UTF-8"/>
+ </head>
+ <body>
+  <h3>GRADION CRYPTOS INVESTMENTS</h3>
+  <h4>Create your account</h4>
+  <p> Enter your details below to create an account and start enjoying our services instantly!</p>
+  <form>
+   <P>Enter your refferer</P>
+   <input type="text" placeholder="Enter your referrer"/>
+   <p>Enter your username</p>
+   <input type="text" placeholder="Enter your username"/>
+   <p>Enter your full name</p>
+   <input type="text"placeholder ="Enter your full name"/>
+   <p>Enter your email</p>
+   <input type="email"id="demo" name="email"placeholder="Enter your email address"/>
+   <p>Choose your country</p>
+   <select id="country" name="country"/>
+     <option value "Afganistan">Afganistan</option>
+     
+     <option value "United States">United States</option> 
+     <option value "Kenya">Kenya</option>
+     <option value "Switzerland">Switzerland</option>
+     <option value "Lebanon">Lebanon</option>
+   <select>
+    <P>Choose your coutry code and enter phone number .</P>
+    <span>
+   <select name="CountryCode" id="">
+    <option data-CountryCode="AFG"value="93">Afganistan+93</option>
+    <option data-CountryCode="US"value="1">USA+1</option>
+    <option data-CountryCode="KE"value="254">Kenya+254</option>
+    <option data-CountryCode="CH"value="41">Switzerland+41</option>
+    <option data-CountryCode="LB"value="961">Lebanon+961</option>
+
+   </select>
+   <input type="number" maxlength="9"placeholder ="Enter phone number"/>
+   <p>Choose your gender</p>
+   <input type="radio" name="gender" value="male" id="male"/>
+   <label for="male">Male</label>
+   <input type="radio" name="gender" value="female" id="female"/>
+   <label for="female">Female</label>
+   <p>Enter your date of birth</p>
+   <input type="date" />
+
+  <p>Enter your password</p>
+  <input type="password" maxlength="9"placeholder ="Enter password"/>
+  <p>Confirm your password</p>
+  <input type="password" maxlength="9"placeholder ="Confirm password"/>
+  <p>Click the button below to read our terms and conditions </p>
+  <input type="hidden" value="Processing is done within the next 5 mins, Invest what you can afford to loose, we are not accountable of any losses which might occur, continue at your own risk! " id="demo"/>
+  <br/>
+  <button onclick="getValue()">Read</button>
+  <script type="text/javascript">
+      function getValue() {
+               alert(document.getElementById('demo').value);
+      }
+  
+  </script>
+  
+  <span>
+   <input type="checkbox"/>
+   <p>I agree to the terms and conditions.</p>
+  </span>
+  </form>
+ </body>
+</html>
